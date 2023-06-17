@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+    <style type="text/css">
+        
+        *{
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        header{
+            color: white;
+            background-color: Black;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgb(37, 179, 255);
+        }
+        /* nav */
+        nav{
+            z-index: 4;
+        }
+        #main-ul{
+            display: flex;
+            text-align: center;
+            background: linear-gradient(to left bottom, black, rgb(91, 179, 242));
+            height: 25px;
+            line-height: 20px;
+        }
+        .nav-list{
+            width: 100px;
+            font-weight: bold;
+        }
+        .nav-list:nth-child(3){
+            background: linear-gradient(to left bottom, black, rgb(91, 179, 242))
+        }
+        .nav-list ul li{
+            width: 100px;
+            height: 25px;
+        }
+        .ul-box li{
+            display: none;
+            background-color: rgb(57, 135, 245);
+            width: 100%;
+
+        }
+        .nav-list:hover li{
+            display: block;
+        }
+        ul li:hover{
+            background: linear-gradient(to left bottom, black, rgb(91, 179, 242));
+
+        }  
+        .nav-list:hover{
+            background: linear-gradient(to left bottom, black, rgb(66, 148, 255));
+        }
+        a{
+            color: rgb(255, 255, 255);
+        }
+        /* nav End */
+        #main{
+            text-align: center;
+        }
+        .container{
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            margin-top: 40px;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: rgb(187, 233, 218);
+            box-shadow: 0 5px 30px 5px rgb(85, 131, 128);
+            
+        }
+        img{
+            width: 200px;
+            height: 200px;  
+        }
+        .container p{
+            margin-bottom: 15px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+ 
+        .fullscreen-bg__video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- Start Nav -->
+
+        <nav>
+
+            <ul id="main-ul">
+    
+                <li class="nav-list"><a href="../index.html">خانه</a></li>
+    
+                <li class="nav-list"><a href="#">سرویس ها</a>
+                    
+                    <ul class="ul-box">
+                        <li><a href="../Games/Games.html">بازی ها</a></li>
+                        <li><a href="../SIgn In/Sign.html">ثبت نام</a></li>
+                    </ul>
+    
+                </li>
+    
+                <li class="nav-list"><a href="#">درباره ی ما</a></li>
+    
+            </ul>
+    
+        </nav>
+    
+        <!-- End Of Nav -->
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="../Images/Video-Pass.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="main">
+        <div class="container">
+                <img src="../Images/Me.jpg">
+                <section id="sec">
+                <p>نام و نام خانوادگی: <strong>محمد امین</strong></p>
+                <hr>
+                <p>توضیحات: <strong>محمد امین زمانی دانش آموزش دبیرستان دانش</strong></p>
+                <hr>
+                <p>محل زندگی: <strong>اصفهان-فولادشهر</strong></p>
+                <hr>
+                <p>پایه:  <strong>دهم</strong></p>
+                <p>شماره ارتباط: <strong>09055691959</strong></p>
+                </section>
+            </div>
+        </div>
+</body>
+</html>
